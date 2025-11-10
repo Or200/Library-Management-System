@@ -9,7 +9,7 @@ class FileManeger:
         with open("library.json", "w") as f:
             json.dump(lib, f, ensure_ascii = False, indent = 4)
 
-    def lode_from_json(self):
+    def load_from_json(self):
         with open("library.json") as f:
             lib = json.load(f)
         return lib
